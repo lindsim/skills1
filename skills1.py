@@ -75,14 +75,30 @@ def sum_numbers(number_list):
 
 # Write a function that multiplies all the numbers in a list together.
 def mult_numbers(number_list):
-    return 0
+    total_multiply = number_list[0]
+    for x in range (1, len(number_list)):
+        total_multiply = total_multiply * number_list[x]
+  
+    return total_multiply 
 
 # Write a function that joins all the strings in a list together (without using the join method) and returns a single string.
 def join_strings(word_list):
-    return ""
+    giant_string = ""
+    for item in word_list:
+        giant_string = giant_string + item
+  
+    return giant_string
+
 
 # Write a function that takes a list of integers and returns the average (without using the avg method)
 def average(number_list):
-    return 0
+    x = sum_numbers(number_list)
+    ave = x / len(number_list)
+    return ave
+
+
+
+
+
 
 
